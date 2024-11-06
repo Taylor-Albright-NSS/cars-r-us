@@ -22,6 +22,10 @@ export const setWheels = (chosenWheel) => {
     console.log(transientState)
 }
 
+export const getTransientState = () => {
+    return transientState
+}
+
 export const saveOrderSubmission = async () => {
     const postOptions = {
         method: "POST",

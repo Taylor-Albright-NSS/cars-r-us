@@ -1,14 +1,14 @@
 import { setSeatStyles } from "./TransientState.js"
 
 const changeInteriorHandler = (changeEvent) => {
-    if (changeEvent.target.id === 'interior' && changeEvent.target.value != 0) {
+    if (changeEvent.target.id === 'interior') {
         let parsedValue = parseInt(changeEvent.target.value)
         setSeatStyles(parsedValue)
     }
 }
 
 export const SeatStyles = async () => {
-    const response = await fetch("http://localhost:8088/interior")
+    const response = await fetch("http://localhost:8088/interiors")
     const interiors = await response.json()
     document.addEventListener("change", changeInteriorHandler)
     console.log(interiors)

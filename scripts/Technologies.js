@@ -8,7 +8,7 @@ const changeTechnologyHandler = (changeEvent) => {
 }
 
 export const Technologies = async () => {
-    const response = await fetch("http://localhost:8088/technology")
+    const response = await fetch("http://localhost:8088/technologies")
     const technologies = await response.json()
     document.addEventListener("change", changeTechnologyHandler)
     let composeHTML = `

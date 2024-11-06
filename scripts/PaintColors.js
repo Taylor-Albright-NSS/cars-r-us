@@ -1,7 +1,7 @@
 import { setPaintColors } from "./TransientState.js"
 
 const changeColorHandler = (changeEvent) => {
-    if (changeEvent.target.id === 'color' && changeEvent.target.value != 0) {
+    if (changeEvent.target.id === 'color') {
         let parsedValue = parseInt(changeEvent.target.value)
         setPaintColors(parsedValue)
     }

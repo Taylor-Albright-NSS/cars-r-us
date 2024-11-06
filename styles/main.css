@@ -1,0 +1,48 @@
+body {}
+h2 {
+    margin-top: 0.3rem;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 1600px;
+}
+.allSelections {
+    display: flex;
+}
+.paintColors,
+.seatStyles,
+.technologies,
+.wheels {
+    border: 2px dashed rgb(232, 151, 151);
+    border-radius: 8px;
+    flex-grow: 1;
+    height: 200px;
+    max-width: 200px;
+    margin: 4rem;
+    padding: 1.5rem;
+    text-align: center;
+    background-color: rgb(255, 224, 198);
+    box-shadow: 5px 5px 5px rgb(72, 72, 72);
+}
+.paintColors:hover, 
+.seatStyles:hover, 
+.technologies:hover, 
+.wheels:hover {
+    background-color: rgb(255, 215, 179);
+}
+.placeOrderButton {
+    text-align: center;
+}
+.placedOrdersList {
+    width: 800px;
+}
+.singleOrder {
+    border: 2px dotted black;
+    background: rgb(176, 211, 232);
+    margin: 0.5rem;
+    height: 46px;
+    padding-top: 0.6rem;
+    line-height: 1.2rem;
+}

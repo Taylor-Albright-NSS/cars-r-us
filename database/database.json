@@ -21,7 +21,7 @@
       "price": 600
     }
   ],
-  "interior": [
+  "interiors": [
     {
       "id": "1",
       "seatType": "Beige Fabric",
@@ -43,7 +43,7 @@
       "price": 1100
     }
   ],
-  "technology": [
+  "technologies": [
     {
       "id": "1",
       "package": "Basic Package",
@@ -88,5 +88,19 @@
     }
   ],
   "orders": [
+    {
+      "paintColorsId": 4,
+      "interiorsId": 2,
+      "technologiesId": 2,
+      "wheelsId": 1,
+      "id": 876
+    },
+    {
+      "paintColorsId": 2,
+      "interiorsId": 3,
+      "technologiesId": 3,
+      "wheelsId": 3,
+      "id": 877
+    }
   ]
 }
